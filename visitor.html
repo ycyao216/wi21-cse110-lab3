@@ -2,14 +2,16 @@
 <html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <title>Visitor survey</title>
 </head>
 <main>
     <div>
         <h1>Hello, please fill out this visitor form. It will not be recorded</h1>
         <hr>
 
-        <form action="" method="POST" autocomplete="off" name="Visitor_info" target="_self" id="visitor_form">
+        <form action="non-for-now" method="POST" autocomplete="off" name="Visitor_info" target="_self"
+            id="visitor_form">
             <div>
 
                 <fieldset form="visitor_form" name="Visitor_info_fields">
@@ -24,12 +26,15 @@
                         <li><label for="dob">Your date of birth: <input type="date" name="dob" id="dob" /></label></li>
                         <li><label for="is_ucsd">Are you a UCSD student or faculty member? <input type="checkbox"
                                     name="is_ucsd" id="is_ucsd" required /> </label></li>
-                        <li><label for="is_cd">Are you a CS major? <input type="checkbox" name="is_cs"
-                                    id="is_cs" /></label>
-                        <li><label for="gender">What is your self-identified gender?</label><br>
-                            Male <input type="radio" name="gender_male" id="gender" /><br>
-                            Female <input type="radio" name="gender_female" id="gender" /><br>
-                            Non-binary <input type="radio" name="gender_other" id="gender" /><br>
+                        <li><label for="is_cs">Are you a CS major? </label><input type="checkbox" name="is_cs"
+                                id="is_cs" />
+                        <li><label>What is your self-identified gender?</label><br>
+                            <label for="gender_male"></label>Male <input type="radio" name="gender"
+                                id="gender_male" /><br>
+                            <label for="gender_female"></label>Female <input type="radio" name="gender"
+                                id="gender_female" /><br>
+                            <label for="gender_other"></label>Non-binary <input type="radio" name="gender"
+                                id="gender_other" /><br>
                         </li>
                         <li><label for="fav_prog_lang">What is your favorite programming language?</label>
                             <select name="prog_lang" id="fav_prog_lang">
@@ -58,7 +63,7 @@
                     <ol>
                         <li><label for="fav_food">What is your favorite food?</label>
                             <input type="text" name="fav_food" id="fav_food" list="fav_food_choices" />
-                            <datalist id="fav_food_choices" name="fav_food">
+                            <datalist id="fav_food_choices">
                                 <option>Pizza</option>
                                 <option>Cheese burger</option>
                                 <option>Solar energy for photosynthesis</option>
@@ -69,7 +74,7 @@
                             <input type="month" name="fav_month" id="fav_month" min="2020-01" max="2020-12" />
                         </li>
                         <li>
-                            <label for="sibling_num">How many siblings do you have?</label>
+                            <label for="num_sibling">How many siblings do you have?</label>
                             <input type="number" name="num_sibling" id="num_sibling" min="0" />
                         </li>
                         <li>
@@ -97,7 +102,7 @@
 
                 </fieldset>
             </div>
-            <button type="submit" formaction="" formmethod="GET"> Submit the form</button>
+            <button type="submit" formaction="non-for-now" formmethod="GET"> Submit the form</button>
             <input type="reset" value="Reset" />
         </form>
     </div>

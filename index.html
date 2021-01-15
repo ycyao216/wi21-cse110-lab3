@@ -3,20 +3,19 @@
 
 <head>
     <title>Evan Yao's user page </title>
-    <meta charset="UTF-8" author="Evan Yao" name="user-page-meta">
-    <link type="text/html" href="visitor.html" disable>
+    <meta charset="UTF-8">
+    <link rel="" type="text/css" href="emptyfile">
 </head>
 
 <body>
     <main>
         <header class="main-header">
-            <a name="top-of-page"></a>
+            <a id="top-of-page"></a>
             <h1> Evan Yao's user page</h1>
         </header>
         <p><strong>Important: this page is currently under construction</strong></p>
-        <p>My <a href="linkedin.com/in/ycyao">LinkedIn URL</p>
+        <p>My <a href="linkedin.com/in/ycyao">LinkedIn URL</a></p>
         <nav class="user_page_nav">
-            <a href="visitor.html">Visitor survey</a>
             <a href="https://developer.mozilla.org/en-US/">HTML learning resources</a>
             <a href="https://ycyao216.github.io/">Previous github page</a>
         </nav>
@@ -36,26 +35,25 @@
                 </ol>
             </details>
             <header>
-                <a name="basic-bio"></a>
+                <a id="basic-bio"></a>
                 <h2>Basic Bio</h2>
             </header>
-            <article>
-                <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence.
-                    Have
-                    experiences in software development for autonomous vehicles and sensors.</p>
-                <aside>
-                    <!-- Doesn't place my picture on the side without css-->
-                    <p>This is my photo:</p>
-                    <figure>
-                        <img src="media/profile_pic.jpeg" alt="Profile picture"></img>
-                        <figcaption>Taken in front of the CSE building</figcaption>
-                    </figure>
-                </aside>
+            <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence.
+                Have
+                experiences in software development for autonomous vehicles and sensors.</p>
+            <aside>
+                <!-- Doesn't place my picture on the side without css-->
+                <p>This is my photo:</p>
+                <figure>
+                    <img src="media/profile_pic.jpeg" alt="Profile picture" />
+                    <figcaption>Taken in front of the CSE building</figcaption>
+                </figure>
+            </aside>
         </section>
         <hr>
         <section>
             <header>
-                <a name="some-relavent-skills"></a>
+                <a id="some-relavent-skills"></a>
                 <h2>Some relavent skills</h2>
             </header>
             <h3>Technical skills</h3>
@@ -70,18 +68,19 @@
         </section>
         <div>
             <header>
-                <a name="relavent-courses"></a>
+                <a id="relavent-courses"></a>
                 <h2> Relavent courses </h2>
             </header>
             <p>
-                <b> CSE100, CSE 105, MATH 170, MATH 183, <i>MATH 109, CSE 110, CSE 101, MATH 102 </b>(Italic ones are
-                currently being taken)</i>
+                <b> CSE100, CSE 105, MATH 170, MATH 183, </b> <b><i>MATH 109, CSE 110, CSE 101, MATH 102</i> </b>(Italic
+                ones are
+                currently being taken)
             </p>
         </div>
         <hr>
         <div>
             <header>
-                <a name="language"></a>
+                <a id="language"></a>
                 <h2>Languages</h2>
             </header>
             <h3> My top 3 programming languages</h3>
@@ -100,7 +99,7 @@
         <hr>
         <div>
             <header>
-                <a name="goals"></a>
+                <a id="goals"></a>
                 <h2> Goals of 2021 </h2>
             </header>
             <table>
@@ -138,7 +137,7 @@
         <hr>
         <div>
             <header>
-                <a name="random-facts"></a>
+                <a id="random-facts"></a>
                 <h2> Some random facts</h2>
             </header>
 
@@ -159,7 +158,6 @@
         return 0; 
     } 
             </pre>
-            </p>
             <div>
                 <h3>Avoiding Segfaluts</h3>
                 <p>An importnat thing to note is that in C++, <code>pop()</code> does not actually "pop." One usually
@@ -193,25 +191,27 @@
             <p>The following piece of music was the first piece of electronic music that I liked. It was one of the
                 three songs that were included in iPod nano back in 2012. It has an interesting cover</p>
             <img width="200" src="media/Karlimba.jpg"
-                alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed"></img>
+                alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed" />
             <audio controls>
                 <source src="media/Kalimba.mp3" type="audio/mp3" />
                 The browser does not support mp3 audio
             </audio>
             <h3>Drawings</h3>
             <section>
-                <p>More interesting elements will be drawn on this canvas</p>
-
+                <h3>More interesting elements will be drawn on this canvas</h3>
+                <p>Start of canvas</p>
                 <canvas width="100" height="100">
                     The browser does not support html canvas
                 </canvas>
+                <p>End of canvas</p>
                 <p>A red cube drawn on svg</p>
-                <svg viewBox="0 0 100 100" weidth="42" height="42" x=42 y=42>
+                <svg viewBox="0 0 100 100" width="42" height="42" x=42 y=42>
                     <rect x=50 y=50 width="42" height="42" style="fill:red"></rect>
                 </svg>
             </section>
             <hr>
-            <h2>Visitor recording</h2>
+            <h2>Visitor recording. <strong>It contains all the form-related html elements, together with 10+ input
+                    types</strong></h2>
             Please fill out this <a href="visitor.html">visitor form</a>
         </div>
     </main>
