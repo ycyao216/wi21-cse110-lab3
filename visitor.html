@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<main>
+    <div>
+        <h1>Hello, please fill out this visitor form. It will not be recorded</h1>
+        <hr>
+
+        <form action="" method="POST" autocomplete="off" name="Visitor_info" target="_self" id="visitor_form">
+            <div>
+
+                <fieldset form="visitor_form" name="Visitor_info_fields">
+                    <legend>
+                        <h2>Basic information</h2>
+                    </legend>
+                    <ol>
+                        <li><label for="vis_name">Your name: <input type="text" name="visitor_name" id="vis_name"
+                                    required /></label></li>
+                        <li><label for="vis_email">Your email: <input type="email" name="visitor_email" id="vis_email"
+                                    required /></label></li>
+                        <li><label for="dob">Your date of birth: <input type="date" name="dob" id="dob" /></label></li>
+                        <li><label for="is_ucsd">Are you a UCSD student or faculty member? <input type="checkbox"
+                                    name="is_ucsd" id="is_ucsd" required /> </label></li>
+                        <li><label for="is_cd">Are you a CS major? <input type="checkbox" name="is_cs"
+                                    id="is_cs" /></label>
+                        <li><label for="gender">What is your self-identified gender?</label><br>
+                            Male <input type="radio" name="gender_male" id="gender" /><br>
+                            Female <input type="radio" name="gender_female" id="gender" /><br>
+                            Non-binary <input type="radio" name="gender_other" id="gender" /><br>
+                        </li>
+                        <li><label for="fav_prog_lang">What is your favorite programming language?</label>
+                            <select name="prog_lang" id="fav_prog_lang">
+                                <optgroup label="Complier language">
+                                    <option value="c">C/C++</option>
+                                    <option value="java">Java</option>
+                                    <option value="rust">Rust</option>
+                                </optgroup>
+                                <optgroup label="Script language">
+                                    <option value="python">Python</option>
+                                    <option value="js">JavaScript</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="none" selected>None</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                    </ol>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset form="visitor_form" name="Visitor_info_fun">
+                    <legend>
+                        <h2>Information for fun</h2>
+                    </legend>
+                    <ol>
+                        <li><label for="fav_food">What is your favorite food?</label>
+                            <input type="text" name="fav_food" id="fav_food" list="fav_food_choices" />
+                            <datalist id="fav_food_choices" name="fav_food">
+                                <option>Pizza</option>
+                                <option>Cheese burger</option>
+                                <option>Solar energy for photosynthesis</option>
+                            </datalist>
+                        </li>
+                        <li>
+                            <label for="fav_month">What is your favorite month or 2020, if any?</label><br>
+                            <input type="month" name="fav_month" id="fav_month" min="2020-01" max="2020-12" />
+                        </li>
+                        <li>
+                            <label for="sibling_num">How many siblings do you have?</label>
+                            <input type="number" name="num_sibling" id="num_sibling" min="0" />
+                        </li>
+                        <li>
+                            <label for="fav_time">What is your favorite time of the day?</label>
+                            <input type="time" name="fav_time" id="fav_time" />
+                        </li>
+                        <li>
+                            <label for="fav_color">What is your favorite color?</label>
+                            <input type="color" name="fav_color" id="fav_color" />
+                        </li>
+                    </ol>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset form="visitor_form" name="visitor_thoughts">
+                    <legend>
+                        <h2>Other info</h2>
+                    </legend>
+                    <label for="user_feedback">Is there anything else that you would like to comment about? 300
+                        characters max</label><br>
+                    <textarea id="user_feedback" name="user_feedback" rows="6" cols="50" maxlength="300"
+                        spellcheck="true" wrap="soft">
+
+                    </textarea>
+
+                </fieldset>
+            </div>
+            <button type="submit" formaction="" formmethod="GET"> Submit the form</button>
+            <input type="reset" value="Reset" />
+        </form>
+    </div>
+</main>
+
+</html>

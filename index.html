@@ -3,42 +3,226 @@
 
 <head>
     <title>Evan Yao's user page </title>
-    <meta charset="UTF-8" author="Evan Yao">
-    <link rel="empty_style_sheet" href="empty.css">
+    <meta charset="UTF-8" author="Evan Yao" name="user-page-meta">
+    <link type="text/html" href="visitor.html" disable>
 </head>
 
 <body>
-    <nav class="user_page_nav">
-        <ul>
-            <li><a href="#basic-bio">Basic Bio</a></li>
-            <li><a href="#some-relavent-skills">Relavent skills</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1> Evan Yao's user page</h1>
+        <header class="main-header">
+            <a name="top-of-page"></a>
+            <h1> Evan Yao's user page</h1>
+        </header>
+        <p><strong>Important: this page is currently under construction</strong></p>
+        <p>My <a href="linkedin.com/in/ycyao">LinkedIn URL</p>
+        <nav class="user_page_nav">
+            <a href="visitor.html">Visitor survey</a>
+            <a href="https://developer.mozilla.org/en-US/">HTML learning resources</a>
+            <a href="https://ycyao216.github.io/">Previous github page</a>
+        </nav>
+        <hr>
         <section>
+            <details>
+                <summary>
+                    <b> Table of content:</b>
+                </summary>
+                <ol>
+                    <li><a href="#basic-bio">Basic bio</a></li>
+                    <li><a href="#some-relavent-skills">Relavent skills</a></li>
+                    <li><a href="#relavent-courses">Relavent courses</a></li>
+                    <li><a href="#language">Languages</a></li>
+                    <li><a href="#goals">2021 goals</a></li>
+                    <li><a href="#random-facts">Random facts</a></li>
+                </ol>
+            </details>
             <header>
+                <a name="basic-bio"></a>
                 <h2>Basic Bio</h2>
             </header>
-            <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence. Have
-                experiences in software development for autonomous vehicles and sensors.</p>
+            <article>
+                <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence.
+                    Have
+                    experiences in software development for autonomous vehicles and sensors.</p>
+                <aside>
+                    <!-- Doesn't place my picture on the side without css-->
+                    <p>This is my photo:</p>
+                    <figure>
+                        <img src="media/profile_pic.jpeg" alt="Profile picture"></img>
+                        <figcaption>Taken in front of the CSE building</figcaption>
+                    </figure>
+                </aside>
         </section>
+        <hr>
         <section>
-            <h2>Some relavent skills</h2>
+            <header>
+                <a name="some-relavent-skills"></a>
+                <h2>Some relavent skills</h2>
+            </header>
             <h3>Technical skills</h3>
             <p>
                 <i>C++, Java, Python, Bash, Docker, ROS, Torch, Tensorflow, Matlab with Simulink.</i>
             </p>
+            <hr>
             <h3>Relavent knowledges</h3>
             <p>
                 <i>MCP controller, RRT path planning</i>
             </p>
         </section>
+        <div>
+            <header>
+                <a name="relavent-courses"></a>
+                <h2> Relavent courses </h2>
+            </header>
+            <p>
+                <b> CSE100, CSE 105, MATH 170, MATH 183, <i>MATH 109, CSE 110, CSE 101, MATH 102 </b>(Italic ones are
+                currently being taken)</i>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <header>
+                <a name="language"></a>
+                <h2>Languages</h2>
+            </header>
+            <h3> My top 3 programming languages</h3>
+            <ol>
+                <li>Python</li>
+                <li>C++</li>
+                <li>JAVA</li>
+            </ol>
+            <h3> Languages that I speak</h3>
+            <ul>
+                <li>Chinese</li>
+                <li>Enlgish</li>
+                <li>Spanish (still learning)</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <header>
+                <a name="goals"></a>
+                <h2> Goals of 2021 </h2>
+            </header>
+            <table>
+                <caption>Personal goals and career goals</caption>
+                <colgroup>
+                    <col span="2" class="career-goals" />
+                    <col span="2" class="personal-goals" />
+                </colgroup>
+                <tr>
+                    <th scope="col" colspan="1">Career Goals</th>
+                    <th scope="col" colspan="1" id="p_diff">Difficulty</th>
+                    <th scope="col" colspan="1">Personal Goals</th>
+                    <th scope="col" colspan="1" id="c_diff">Difficulty</th>
+                </tr>
+                <tr>
+                    <td>Make a plan for the rest of the college years</td>
+                    <td>3/10</td>
+                    <td>Try to feel safe about grades</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Get good grades in CSE 110</td>
+                    <td>7/10</td>
+                    <td>Try to have more sleep</td>
+                    <td>5/10</td>
+                </tr>
+                <tr>
+                    <td>Be comfortable about git commands</td>
+                    <td>2/10</td>
+                    <td>Exercise more</td>
+                    <td>1/10</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <header>
+                <a name="random-facts"></a>
+                <h2> Some random facts</h2>
+            </header>
 
+            <h3>Confusing git commands</h3>
+            <p>
+                I still need to learn more about the differences between <span class="unfam_git">git reset</span>, <span
+                    class="unfam_git">git revert</span>, and <span class="unfam_git">git rebase</span> since they are
+                not used frequently.
+            </p>
+            <h3>Being tall</h3>
+            <p>I am 6'4, but I <em>DO NOT</em> play basketball.</p>
+            <h3>Beginning of the journey</h3>
+            <p>
+                My very first lines of codes are:
+            <pre>
+    int main(){ 
+        printf("hello world"); 
+        return 0; 
+    } 
+            </pre>
+            </p>
+            <div>
+                <h3>Avoiding Segfaluts</h3>
+                <p>An importnat thing to note is that in C++, <code>pop()</code> does not actually "pop." One usually
+                    needs to call <code>top()</code> to get the first element from te data structure. This was a common
+                    reason for segfaults in my early C++ codes
+                </p>
+                <p>Take a look at the c++ reference about <code>pop()</code> function of <code>std::stack</code></p>
+                <iframe src="https://www.cplusplus.com/reference/stack/stack/pop/" title="C++ stack pop reference"
+                    width=1000 height=500></iframe>
+            </div>
+            <h3>Interesting quotes</h3>
+            <p>My friends said:<br>
+                "Due tomorrow, do tomorrow"<br>
+                But my professors said:<br>
+                "Start early, start often"<br>
+                Similar structure, opposite meaning. Interesting.
+            <h3>Pets</h3>
+            <p>This is my cat, name is pudding, but if you <strong>change the browser window size</strong>, it becomes
+                <em>another picture </em> of my cat
+            </p>
+            <picture>
+                <source srcset="media/cat.jpg" media="(min-width: 1000px)" />
+                <img src="media/cat3.JPG" alt="Pudding" width="400" />
+            </picture>
+            <p>Here is a shrot video of my cat</p>
+            <video width="400" controls>
+                <source src="media/cat.mp4" type="video/mp4" />
+                The browser does not support mp4 video
+            </video>
+            <h3>Music</h3>
+            <p>The following piece of music was the first piece of electronic music that I liked. It was one of the
+                three songs that were included in iPod nano back in 2012. It has an interesting cover</p>
+            <img width="200" src="media/Karlimba.jpg"
+                alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed"></img>
+            <audio controls>
+                <source src="media/Kalimba.mp3" type="audio/mp3" />
+                The browser does not support mp3 audio
+            </audio>
+            <h3>Drawings</h3>
+            <section>
+                <p>More interesting elements will be drawn on this canvas</p>
+
+                <canvas width="100" height="100">
+                    The browser does not support html canvas
+                </canvas>
+                <p>A red cube drawn on svg</p>
+                <svg viewBox="0 0 100 100" weidth="42" height="42" x=42 y=42>
+                    <rect x=50 y=50 width="42" height="42" style="fill:red"></rect>
+                </svg>
+            </section>
+            <hr>
+            <h2>Visitor recording</h2>
+            Please fill out this <a href="visitor.html">visitor form</a>
+        </div>
     </main>
     <footer>
         <p>Author: Evan Yao</p>
     </footer>
+    <a href="#top-of-page">Back to top</a>
+    <template>
+        <p>This is a hidden message, together with a secrete photo of my cat</p>
+        <img src="media/cat2.jpeg" alt="secrete" />
+    </template>
 </body>
 
 </html>
