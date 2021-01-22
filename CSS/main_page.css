@@ -11,8 +11,12 @@ ID selector
     src:url("fonts/BebasNeue-Regular.ttf");
 }
 #imp_notes{
+    position:static;
     color:red;
     text-decoration: underline;
+    border-style:dashed;
+    border-color:#F00;
+    border-radius:0.1cm;
 }
 h1{
     color:#2F4F4F;
@@ -32,4 +36,89 @@ h2{
 
 h3{
     color:#008080;
+}
+
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+#lang_info{
+    margin: 10px 10px auto auto
+}
+
+#goals{
+    border-style: dashed;
+    border-color: hsl(248,50%,50%);
+    border-radius: 0.1ch;
+    border-width: 0.05in;
+    padding: 5% 7% 7% 5%
+}
+
+#profile_pic{
+    max-width: 30%;
+    max-height: auto;
+    position: relative;
+    left: 30px;
+}
+
+.quotes{
+    display:block;
+    font-size: medium;
+    color: hsla(284, 55%, 45%, 1)
+}
+
+.quotes_intro{
+    display:block;
+    font-size: medium;
+    color: rgb(0, 90, 143);
+}
+
+.nav_bar{
+    border-color:limegreen;
+    border-style: solid;
+    text-align: center;
+    position:sticky;
+    top: 0;
+    bottom: 0;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_bar li{
+    display:inline-block;
+    text-align: center;
+}
+
+p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+iframe{
+    display: block;
+    width: 50em;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ninja{
+    margin:auto;
+    display: block;
+}
+
+#fav_music{
+    margin:auto;
+    display:block;
+
+}
+
+[type="video/mp4"]{
+    position:relative;
+    left: 30%;
 }

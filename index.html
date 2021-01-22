@@ -20,36 +20,34 @@
             <a href="https://ycyao216.github.io/">Previous github page</a>
         </nav>
         <hr>
-        <section>
-            <details>
-                <summary>
-                    <b> Table of content:</b>
-                </summary>
-                <ol>
-                    <li><a href="#basic-bio">Basic bio</a></li>
-                    <li><a href="#some-relavent-skills">Relavent skills</a></li>
-                    <li><a href="#relavent-courses">Relavent courses</a></li>
-                    <li><a href="#language">Languages</a></li>
-                    <li><a href="#goals">2021 goals</a></li>
-                    <li><a href="#random-facts">Random facts</a></li>
-                </ol>
-            </details>
-            <header>
-                <a id="basic-bio"></a>
-                <h2>Basic Bio</h2>
-            </header>
-            <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence.
-                Have
-                experiences in software development for autonomous vehicles and sensors.</p>
-            <aside>
-                <!-- Doesn't place my picture on the side without css-->
-                <p>This is my photo:</p>
-                <figure>
-                    <img src="media/profile_pic.jpeg" alt="Profile picture" />
-                    <figcaption>Taken in front of the CSE building</figcaption>
-                </figure>
-            </aside>
-        </section>
+        <details class="nav_bar">
+            <summary>
+                <b> Table of content:</b>
+            </summary>
+            <ol>
+                <li><a href="#basic-bio">Basic bio</a></li>
+                <li><a href="#some-relavent-skills">Relavent skills</a></li>
+                <li><a href="#relavent-courses">Relavent courses</a></li>
+                <li><a href="#language">Languages</a></li>
+                <li><a href="#goals">2021 goals</a></li>
+                <li><a href="#random-facts">Random facts</a></li>
+            </ol>
+        </details>
+        <header>
+            <a id="basic-bio"></a>
+            <h2>Basic Bio</h2>
+        </header>
+        <p>Second year CS major student at UCSD. Interested in compter perceptions and artificial intellegence.
+            Have
+            experiences in software development for autonomous vehicles and sensors.</p>
+        <aside>
+            <!-- Doesn't place my picture on the side without css-->
+            <p>This is my photo:</p>
+            <figure>
+                <img id="profile_pic" src="media/profile_pic.jpg" alt="Profile picture" />
+                <figcaption>Taken in front of the CSE building</figcaption>
+            </figure>
+        </aside>
         <hr>
         <section>
             <header>
@@ -78,7 +76,7 @@
             </p>
         </div>
         <hr>
-        <div>
+        <div id="lang_info">
             <header>
                 <a id="language"></a>
                 <h2>Languages</h2>
@@ -97,7 +95,7 @@
             </ul>
         </div>
         <hr>
-        <div>
+        <div id="goals">
             <header>
                 <a id="goals"></a>
                 <h2> Goals of 2021 </h2>
@@ -169,13 +167,16 @@
                     width=1000 height=500></iframe>
             </div>
             <h3>Interesting quotes</h3>
-            <p>My friends said:<br>
-                "Due tomorrow, do tomorrow"<br>
-                But my professors said:<br>
-                "Start early, start often"<br>
-                Similar structure, opposite meaning. Interesting.
+            <p>
+                <span class="quotes_intro">My friends said:</span>
+                <span class="quotes">"Due tomorrow, do tomorrow"</span>
+                <span class="quotes_intro">But my professors said:</span>
+                <span class="quotes">"Start early, start often"</span>
+                <span class="quotes_intro">Similar structure, opposite meaning. Interesting.</span>
+            </p>
             <h3>Pets</h3>
-            <p>This is my cat, name is pudding, but if you <strong>change the browser window size</strong>, it becomes
+            <p>This is my cat, name is pudding, but if you <strong>change the browser window size</strong>, it
+                becomes
                 <em>another picture </em> of my cat
             </p>
             <picture>
@@ -188,11 +189,12 @@
                 The browser does not support mp4 video
             </video>
             <h3>Music</h3>
-            <p>The following piece of music was the first piece of electronic music that I liked. It was one of the
+            <p>The following piece of music was the first piece of electronic music that I liked. It was one of
+                the
                 three songs that were included in iPod nano back in 2012. It has an interesting cover</p>
-            <img width="200" src="media/Karlimba.jpg"
+            <img id="ninja" width="200" src="media/Karlimba.jpg"
                 alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed" />
-            <audio controls>
+            <audio controls id="fav_music">
                 <source src="media/Kalimba.mp3" type="audio/mp3" />
                 The browser does not support mp3 audio
             </audio>
@@ -210,7 +212,8 @@
                 </svg>
             </section>
             <hr>
-            <h2>Visitor recording. <strong>It contains all the form-related html elements, together with 10+ input
+            <h2>Visitor recording. <strong>It contains all the form-related html elements, together with 10+
+                    input
                     types</strong></h2>
             Please fill out this <a href="visitor.html">visitor form</a>
         </div>
