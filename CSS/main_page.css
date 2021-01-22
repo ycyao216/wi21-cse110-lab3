@@ -1,1 +1,35 @@
 /*CSS file for index page*/
+
+/***** Used selectors ****
+Class selector
+ID selector
+*************************/
+
+@font-face{
+    font-family: "custom local";
+    /* source downloaded from https://fonts.google.com/specimen/Bebas+Neue?sidebar.open=true&selection.family=Bebas+Neue */
+    src:url("fonts/BebasNeue-Regular.ttf");
+}
+#imp_notes{
+    color:red;
+    text-decoration: underline;
+}
+h1{
+    color:#2F4F4F;
+    text-align:center;
+    text-decoration: overline;
+    font-family: "custom local";
+
+}
+
+h2{
+    color:#556B2F;
+    text-align:center;
+    text-decoration: underline;
+    font-family: "custom local";
+
+}
+
+h3{
+    color:#008080;
+}
