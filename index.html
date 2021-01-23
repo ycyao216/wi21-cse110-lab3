@@ -6,6 +6,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="CSS/main_page.css">
 </head>
+<style>
+    ol,
+    li {
+        border-style: dashed;
+        border-color: black;
+        border-width: 1px;
+    }
+
+    div>code {
+        color: blueviolet;
+        font-size: large;
+    }
+</style>
 
 <body>
     <main>
@@ -76,7 +89,7 @@
             </p>
         </div>
         <hr>
-        <div id="lang_info">
+        <div id="lang_info" class="languages">
             <header>
                 <a id="language"></a>
                 <h2>Languages</h2>
@@ -141,8 +154,9 @@
 
             <h3>Confusing git commands</h3>
             <p>
-                I still need to learn more about the differences between <span class="unfam_git">git reset</span>, <span
-                    class="unfam_git">git revert</span>, and <span class="unfam_git">git rebase</span> since they are
+                I still need to learn more about the differences between <span class="unfam_git" style="color:red">git
+                    reset</span>, <span class="unfam_git" style="color:blue">git revert</span>, and <span
+                    class="unfam_git" style="color:green">git rebase</span> since they are
                 not used frequently.
             </p>
             <h3>Being tall</h3>

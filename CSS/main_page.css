@@ -3,6 +3,11 @@
 /***** Used selectors ****
 Class selector
 ID selector
+Element Selector
+Attribute Selector
+Pseudo-class Selector
+Selector combinator
+
 *************************/
 
 @font-face{
@@ -23,13 +28,27 @@ ID selector
     }
 }
 
+@media screen and (max-height:10px){
+    *{
+        display:none;
+    }
+}
+
 @media screen and (max-width:800px){
     body{
         background-color: rgb(92, 182, 182);
     }
 }
 
+div.languages{
+    background-color: aqua;
+}
 
+
+tr + th{
+    border-style: solid;
+    border-color: rgb(0, 90, 143);
+}
 
 #imp_notes{
     position:static;
@@ -116,6 +135,17 @@ main{
 .nav_bar li{
     display:inline-block;
     text-align: center;
+}
+
+div ~ p{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+h3 + section{
+    font-size: large;
+    color:red;
 }
 
 p{
