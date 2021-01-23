@@ -11,12 +11,15 @@ ID selector
     src:url("fonts/BebasNeue-Regular.ttf");
 }
 
-@media screen and (min-height:200px){
-    .flex-box-example{
-        flex-direction: column-reverse;
+@media screen and (max-height:200px){
+    img{
+        display:none;
     }
-    .flex-box-example div{
-        border-color: red;
+    figure{
+        display: none;
+    }
+    video{
+        display:none;
     }
 }
 
@@ -67,7 +70,7 @@ main{
     margin: 10px 10px auto auto
 }
 
-#goals{
+#goals_table{
     border-style: dashed;
     border-color: hsl(248,50%,50%);
     border-radius: 0.1ch;
