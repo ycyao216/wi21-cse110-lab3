@@ -22,7 +22,7 @@
         <hr>
         <details class="nav_bar">
             <summary>
-                <b> Table of content:</b>
+                <b id="tok"> Table of content:</b>
             </summary>
             <ol>
                 <li><a href="#basic-bio">Basic bio</a></li>
@@ -148,75 +148,111 @@
             <h3>Being tall</h3>
             <p>I am 6'4, but I <em>DO NOT</em> play basketball.</p>
             <h3>Beginning of the journey</h3>
-            <p>
-                My very first lines of codes are:
-            <pre>
-    int main(){ 
-        printf("hello world"); 
-        return 0; 
-    } 
-            </pre>
             <div>
-                <h3>Avoiding Segfaluts</h3>
-                <p>An importnat thing to note is that in C++, <code>pop()</code> does not actually "pop." One usually
-                    needs to call <code>top()</code> to get the first element from te data structure. This was a common
-                    reason for segfaults in my early C++ codes
+                <h3>My very first lines of codes are:</h3>
+                <div class="flex-box-example">
+                    <div>
+                        <code>
+                            int main(){ 
+                                printf("hello world"); 
+                                return 0; 
+                            } 
+                        </code>
+                    </div>
+                    <div>
+                        <code>
+                        public static void main(String args[]){
+                            System.out.println("hello world");
+                        }
+                    </code>
+                    </div>
+                    <div>
+                        <code>
+                            if __name__ = "__main__":
+                                print("hello world")
+                        </code>
+                    </div>
+                </div>
+                <div>
+                    <h3>Avoiding Segfaluts</h3>
+                    <p>An importnat thing to note is that in C++, <code>pop()</code> does not actually "pop." One
+                        usually
+                        needs to call <code>top()</code> to get the first element from te data structure. This was a
+                        common
+                        reason for segfaults in my early C++ codes
+                    </p>
+                    <p>Take a look at the c++ reference about <code>pop()</code> function of <code>std::stack</code></p>
+                    <iframe src="https://www.cplusplus.com/reference/stack/stack/pop/" title="C++ stack pop reference"
+                        width=1000 height=500></iframe>
+                </div>
+                <h3>Interesting quotes</h3>
+                <p>
+                    <span class="quotes_intro">My friends said:</span>
+                    <span class="quotes">"Due tomorrow, do tomorrow"</span>
+                    <span class="quotes_intro">But my professors said:</span>
+                    <span class="quotes">"Start early, start often"</span>
+                    <span class="quotes_intro">Similar structure, opposite meaning. Interesting.</span>
                 </p>
-                <p>Take a look at the c++ reference about <code>pop()</code> function of <code>std::stack</code></p>
-                <iframe src="https://www.cplusplus.com/reference/stack/stack/pop/" title="C++ stack pop reference"
-                    width=1000 height=500></iframe>
+                <h3>Pets</h3>
+                <p>This is my cat, name is pudding, but if you <strong>change the browser window size</strong>, it
+                    becomes
+                    <em>another picture </em> of my cat
+                </p>
+                <picture>
+                    <source srcset="media/cat.jpg" media="(min-width: 1000px)" />
+                    <img src="media/cat3.JPG" alt="Pudding" width="400" />
+                </picture>
+                <p>Here is a shrot video of my cat</p>
+                <video width="400" controls>
+                    <source src="media/cat.mp4" type="video/mp4" />
+                    The browser does not support mp4 video
+                </video>
+                <h3>Music</h3>
+                <p>The following piece of music was the first piece of electronic music that I liked. It was one of
+                    the
+                    three songs that were included in iPod nano back in 2012. It has an interesting cover</p>
+                <img id="ninja" width="200" src="media/Karlimba.jpg"
+                    alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed" />
+                <audio controls id="fav_music">
+                    <source src="media/Kalimba.mp3" type="audio/mp3" />
+                    The browser does not support mp3 audio
+                </audio>
+                <h3>Drawings</h3>
+                <section>
+                    <h3>More interesting elements will be drawn on this canvas</h3>
+                    <p>Start of canvas</p>
+                    <canvas width="100" height="100">
+                        The browser does not support html canvas
+                    </canvas>
+                    <p>End of canvas</p>
+                    <p>A red cube drawn on svg</p>
+                    <svg viewBox="0 0 100 100" width="42" height="42" x=42 y=42>
+                        <rect x=50 y=50 width="42" height="42" style="fill:red"></rect>
+                    </svg>
+                </section>
+                <h2> Gridbox graphic cards</h2>
+                <div class="grid-box">
+                    <div class="main-header">Graphics card table</div>
+                    <div cladd="grid-header1">Description</div>
+                    <div cladd="grid-header2">Card name</div>
+                    <div cladd="grid-header3">Card price</div>
+                    <div class="grid-side1">The one I wanted</div>
+                    <div class="grid-side2">The one I used</div>
+                    <div class="grid-side3">The one I own</div>
+                    <div class="grid-card1">RTX 3080ti</div>
+                    <div class="grid-card2">GeForce 1080ti</div>
+                    <div class="grid-card3">GeForce 980ti</div>
+                    <div class="grid-price1">$$$$</div>
+                    <div class="grid-price2">$$$</div>
+                    <div class="grid-price3">$</div>
+                    <div class="grid-footer">Probably won't be able to change soon</div>
+                </div>
+                <hr>
+                <h2>Visitor recording. <strong>It contains all the form-related html elements, together with 10+
+                        input
+                        types</strong></h2>
+                Please fill out this <a href="visitor.html">visitor form</a>
             </div>
-            <h3>Interesting quotes</h3>
-            <p>
-                <span class="quotes_intro">My friends said:</span>
-                <span class="quotes">"Due tomorrow, do tomorrow"</span>
-                <span class="quotes_intro">But my professors said:</span>
-                <span class="quotes">"Start early, start often"</span>
-                <span class="quotes_intro">Similar structure, opposite meaning. Interesting.</span>
-            </p>
-            <h3>Pets</h3>
-            <p>This is my cat, name is pudding, but if you <strong>change the browser window size</strong>, it
-                becomes
-                <em>another picture </em> of my cat
-            </p>
-            <picture>
-                <source srcset="media/cat.jpg" media="(min-width: 1000px)" />
-                <img src="media/cat3.JPG" alt="Pudding" width="400" />
-            </picture>
-            <p>Here is a shrot video of my cat</p>
-            <video width="400" controls>
-                <source src="media/cat.mp4" type="video/mp4" />
-                The browser does not support mp4 video
-            </video>
-            <h3>Music</h3>
-            <p>The following piece of music was the first piece of electronic music that I liked. It was one of
-                the
-                three songs that were included in iPod nano back in 2012. It has an interesting cover</p>
-            <img id="ninja" width="200" src="media/Karlimba.jpg"
-                alt="retrieved from https://mrscruff.bandcamp.com/track/kalimba, for the purposes of receiving education only, not to be redistributed" />
-            <audio controls id="fav_music">
-                <source src="media/Kalimba.mp3" type="audio/mp3" />
-                The browser does not support mp3 audio
-            </audio>
-            <h3>Drawings</h3>
-            <section>
-                <h3>More interesting elements will be drawn on this canvas</h3>
-                <p>Start of canvas</p>
-                <canvas width="100" height="100">
-                    The browser does not support html canvas
-                </canvas>
-                <p>End of canvas</p>
-                <p>A red cube drawn on svg</p>
-                <svg viewBox="0 0 100 100" width="42" height="42" x=42 y=42>
-                    <rect x=50 y=50 width="42" height="42" style="fill:red"></rect>
-                </svg>
-            </section>
-            <hr>
-            <h2>Visitor recording. <strong>It contains all the form-related html elements, together with 10+
-                    input
-                    types</strong></h2>
-            Please fill out this <a href="visitor.html">visitor form</a>
-        </div>
     </main>
     <footer>
         <p>Author: Evan Yao</p>
